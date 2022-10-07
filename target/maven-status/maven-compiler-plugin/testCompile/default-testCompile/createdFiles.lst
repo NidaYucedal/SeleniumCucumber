@@ -1,0 +1,5 @@
+pages\AmazonPage.class
+stepDefinitions\AmazonStepDefinition.class
+stepDefinitions\AutomationStepDefinition.class
+pages\AtmPage.class
+runners\Runner.class
