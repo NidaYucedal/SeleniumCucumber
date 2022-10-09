@@ -1,5 +1,9 @@
+stepDefinitions\TutorialStepDefinition.class
+pages\TutorialPage.class
 pages\AmazonPage.class
 stepDefinitions\AmazonStepDefinition.class
-stepDefinitions\AutomationStepDefinition.class
 pages\AtmPage.class
 runners\Runner.class
+pages\GooglePage.class
+stepDefinitions\AutomationStepDefinition.class
+stepDefinitions\GoogleStepdefs.class
