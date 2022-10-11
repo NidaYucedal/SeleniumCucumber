@@ -10,13 +10,17 @@ import utilities.ConfigReader;
 import utilities.Driver;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class TutorialStepDefinition {
 
     TutorialPage tutorialPage = new TutorialPage();
-    List<String> tumTel;
-    List<String> list;
+
+    List<String> list=new ArrayList<>();
+
+    List<String> phones = new ArrayList<>();
+
 
     @Given("kullanici tutorial anasayfasinda")
     public void kullaniciTutorialAnasayfasinda() {
@@ -31,26 +35,26 @@ public class TutorialStepDefinition {
     @And("telefonların markalarını alir")
     public void telefonlarinMarkalariniAlir() {
 
-        tumTel = new ArrayList<>();
-        for (WebElement each : tutorialPage.telefonlar) {
-            tumTel.add(each.getText());
 
+        for (WebElement w : tutorialPage.phones) {
+            System.out.println("Tum telefon markalari: " + w.getText());
+            phones.add(w.getText());
         }
-
     }
 
     @And("Tum ogeler sepete eklenir")
     public void tumOgelerSepeteEklenir() {
 
-        for (int i = 0; i < tutorialPage.add.size(); i++) {
-            tutorialPage.add.get(i).click();
-        }
+       // for (int i = 0; i < tutorialPage.add.size(); i++) {
+           // tutorialPage.add.get(i).click();
+       // }
+
+        tutorialPage.addToCart.forEach(WebElement::click);
     }
 
     @And("user sepete tiklar")
     public void userSepeteTiklar() throws InterruptedException {
 
-        tutorialPage.sepet.click();
         tutorialPage.viewCart.click();
 
 
@@ -59,19 +63,19 @@ public class TutorialStepDefinition {
     @And("Sepetteki isimleri aliniz")
     public void sepettekiIsimleriAliniz() {
 
-       // List<String> list= new ArrayList<>();
+
         for (WebElement each : tutorialPage.urunler) {
             list.add(each.getText());
         }
-
-        list.forEach(System.out::println);
 
     }
 
     @Then("Sepetteki ve sayfadaki ürünleri verify edin")
     public void sepettekiVeSayfadakiUrunleriVerifyEdin() {
 
-        Assert.assertTrue(tutorialPage.urunler.contains(tumTel));
+        Collections.sort(phones);
+        Collections.sort(list);
+        Assert.assertEquals(phones, list);
 
 
     }

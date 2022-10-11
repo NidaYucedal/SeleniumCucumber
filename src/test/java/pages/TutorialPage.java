@@ -9,27 +9,22 @@ import java.util.List;
 
 public class TutorialPage {
 
-    public TutorialPage(){
+    public TutorialPage() {
 
-        PageFactory.initElements(Driver.getDriver(),this);
+        PageFactory.initElements(Driver.getDriver(), this);
     }
 
-    @FindBy(xpath = "//*[text()='Phones & PDAs']")
+    @FindBy(xpath = "//a[@href='http://tutorialsninja.com/demo/index.php?route=product/category&path=24']")
     public WebElement phone;
-
-
     @FindBy(xpath = "//h4")
-    public List<WebElement> telefonlar;
-
+    public List<WebElement> phones;
     @FindBy(xpath = "//*[text()='Add to Cart']")
-    public List<WebElement> add;
+    public List<WebElement> addToCart;
 
-    @FindBy(xpath = "//button[@class='btn btn-inverse btn-block btn-lg dropdown-toggle']")
-    public WebElement sepet;
-
-    @FindBy(xpath = "//strong[normalize-space()='View Cart']")
+    @FindBy(xpath = "(//*[text()='Shopping Cart'])[1]")
+    public WebElement sepeteTiklar;
+    @FindBy(css = ".btn.btn-inverse.btn-block.btn-lg.dropdown-toggle")
     public WebElement viewCart;
-
-    @FindBy(xpath = "(//*[@class='table table-bordered'])[2]//tbody//td[2]")
+    @FindBy(xpath = "//body//tr//td[@class='text-left']")
     public List<WebElement> urunler;
 }

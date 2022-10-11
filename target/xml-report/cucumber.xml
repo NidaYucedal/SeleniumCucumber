@@ -1,17 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="60.184">
-    <testcase classname="Amazon Search" name="TC01 kullanici amazonda Nutella aratir" time="18.427">
-        <system-out><![CDATA[Given kullanici amazon anasayfasinda........................................passed
-Then kullanici Nutella icin arama yapar.....................................passed
-And sonuclarin Nutella icerdigini test eder.................................passed
-And sayfayi kapatir.........................................................passed
-]]></system-out>
-    </testcase>
-    <testcase classname="Amazon Search" name="TC03 kullanici amazonda iphone aratir" time="41.544">
-        <system-out><![CDATA[Given kullanici amazon anasayfasinda........................................passed
-Then kullanici iphone icin arama yapar......................................passed
-And sonuclarin iphone icerdigini test eder..................................passed
-And sayfayi kapatir.........................................................passed
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="17.41">
+    <testcase classname="TC verify TestCase" name="TC_07_TestCases" time="17.101">
+        <system-out><![CDATA[Given kullanici "automationUrl" sayfasina...................................passed
+And Ana sayfanın gorunur oldugulu dogrular..................................passed
+And Test Case buttonu na tıklar.............................................passed
+And Test case sayfasinda oldugunu dogrular..................................passed
+Then sayfanın ekran görüntüsünü alın........................................passed
 ]]></system-out>
     </testcase>
 </testsuite>

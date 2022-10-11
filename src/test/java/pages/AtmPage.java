@@ -89,11 +89,20 @@ public class AtmPage {
     @FindBy(css = "button[data-qa='create-account']")
     public WebElement create;
 
+
     @FindBy(xpath = "//*[text()='Account Created!']")
     public WebElement accountCreated;
 
     @FindBy(xpath = "//*[text()='Invalid email address.']")
     public WebElement negativeResultText;
 
+    @FindBy(xpath = "//a[normalize-space()='Home']")
+    public WebElement home;
+
+    @FindBy(xpath = "//a[contains(text(),'Test Cases')]")
+    public WebElement testcase;
+
+    @FindBy(xpath = "//b[normalize-space()='Test Cases']")
+    public WebElement caseVisible;
 
 }
