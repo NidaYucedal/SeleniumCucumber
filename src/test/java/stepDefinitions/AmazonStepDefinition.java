@@ -74,19 +74,29 @@ public class AmazonStepDefinition {
         amazonPage.aramaKutusu.sendKeys(arananKelime,Keys.ENTER);
     }
 
+
     @Given("kullanici {string} sayfasina gider")
-    public void kullaniciSayfasinaGider(String arananUrl) {
-        Driver.getDriver().get(ConfigReader.getProperty(arananUrl));
+    public void kullaniciSayfasinaGider(String istenenUrl) {
+        Driver.getDriver().get(ConfigReader.getProperty(istenenUrl));
 
     }
 
+    @When("url'nin {string} icerdigini test edelim")
+    public void urlNinIcerdiginiTestEdelim(String arananKelime) {
 
-    @When("url'in {string} oldugunu test edelim")
-    public void urlInOldugunuTestEdelim(String istenenUrl) {
 
-        String actual=Driver.getDriver().getCurrentUrl();
-        Assert.assertTrue(actual.contains(istenenUrl));
+        String actualUrl = Driver.getDriver().getCurrentUrl();
+        Assert.assertTrue(actualUrl.contains(arananKelime));
+
+
     }
+    @When("Url in {string} icerdigini test edelim")
+    public void urlInIcerdiginiTestEdelim(String istenenUrl) {
+
+        String actualUrl = Driver.getDriver().getCurrentUrl();
+        Assert.assertTrue(actualUrl.contains(istenenUrl));
+    }
+
 
     @Then("kullanici {int} saniye bekler")
     public void kullaniciSaniyeBekler(int wait) {

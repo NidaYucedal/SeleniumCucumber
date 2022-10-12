@@ -11,5 +11,6 @@ utilities\ReusableMethods.class
 stepDefinitions\TutorialStepDefinition.class
 pages\AmazonPage.class
 runners\Runner.class
+stepDefinitions\NegativeStepDef.class
 stepDefinitions\AutomationExStepDef.class
 stepDefinitions\HepsiBuradaStepDef.class
