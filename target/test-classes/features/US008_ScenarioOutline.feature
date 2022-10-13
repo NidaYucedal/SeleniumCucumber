@@ -19,6 +19,7 @@ Feature: US008 kullanici farkli yanlis sifre ve kullanici adiyla giris yapamaz
     Then gecersiz username olarak "<username>" girer
     Then gecersiz password olarak "<password>" girer
     And Login butonuns basar
+    Then kullanici 3 saniye bekler
     Then sayfaya giris yapilamadigini test eder
     And sayfayi kapat
 
