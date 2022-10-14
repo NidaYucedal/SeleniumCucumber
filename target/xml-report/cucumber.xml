@@ -1,53 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="5" time="60.087">
-    <testcase classname="US008 kullanici farkli yanlis sifre ve kullanici adiyla giris yapamaz" name="TC11 kullanici gecerli bilgilerlegiris yapar" time="25.646">
-        <system-out><![CDATA[Given kullanici "brcUrl" anasayfasinda......................................passed
-Then Login yazisina tikla...................................................passed
-Then gecersiz username olarak "Manager5@gmail.com" girer....................passed
-Then gecersiz password olarak "Manager5!" girer.............................passed
-And Login butonuns basar....................................................passed
-Then sayfaya giris yapilamadigini test eder.................................passed
-And sayfayi kapat...........................................................passed
-]]></system-out>
-    </testcase>
-    <testcase classname="US008 kullanici farkli yanlis sifre ve kullanici adiyla giris yapamaz" name="TC11 kullanici gecerli bilgilerlegiris yapar 2" time="7.445">
-        <system-out><![CDATA[Given kullanici "brcUrl" anasayfasinda......................................passed
-Then Login yazisina tikla...................................................passed
-Then gecersiz username olarak "Manager6@gmail.com" girer....................passed
-Then gecersiz password olarak "Manager6!" girer.............................passed
-And Login butonuns basar....................................................passed
-Then sayfaya giris yapilamadigini test eder.................................passed
-And sayfayi kapat...........................................................passed
-]]></system-out>
-    </testcase>
-    <testcase classname="US008 kullanici farkli yanlis sifre ve kullanici adiyla giris yapamaz" name="TC11 kullanici gecerli bilgilerlegiris yapar 3" time="8.891">
-        <system-out><![CDATA[Given kullanici "brcUrl" anasayfasinda......................................passed
-Then Login yazisina tikla...................................................passed
-Then gecersiz username olarak "Manager7@gmail.com" girer....................passed
-Then gecersiz password olarak "Manager7!" girer.............................passed
-And Login butonuns basar....................................................passed
-Then sayfaya giris yapilamadigini test eder.................................passed
-And sayfayi kapat...........................................................passed
-]]></system-out>
-    </testcase>
-    <testcase classname="US008 kullanici farkli yanlis sifre ve kullanici adiyla giris yapamaz" name="TC11 kullanici gecerli bilgilerlegiris yapar 4" time="8.027">
-        <system-out><![CDATA[Given kullanici "brcUrl" anasayfasinda......................................passed
-Then Login yazisina tikla...................................................passed
-Then gecersiz username olarak "Manager8@gmail.com" girer....................passed
-Then gecersiz password olarak "Manager8!" girer.............................passed
-And Login butonuns basar....................................................passed
-Then sayfaya giris yapilamadigini test eder.................................passed
-And sayfayi kapat...........................................................passed
-]]></system-out>
-    </testcase>
-    <testcase classname="US008 kullanici farkli yanlis sifre ve kullanici adiyla giris yapamaz" name="TC11 kullanici gecerli bilgilerlegiris yapar 5" time="9.612">
-        <system-out><![CDATA[Given kullanici "brcUrl" anasayfasinda......................................passed
-Then Login yazisina tikla...................................................passed
-Then gecersiz username olarak "Manager9@gmail.com" girer....................passed
-Then gecersiz password olarak "Manager9!" girer.............................passed
-And Login butonuns basar....................................................passed
-Then sayfaya giris yapilamadigini test eder.................................passed
-And sayfayi kapat...........................................................passed
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="26.538">
+    <testcase classname="US0013 Parametre Kullanimi" name="TC01 Parametre Kullanimi" time="25.917">
+        <system-out><![CDATA[Given kullanici "trend" anasayfasinda.......................................passed
+Then kullanici 3 saniye bekler..............................................passed
+When url'nin "trendyol" icerdigini test edelim..............................passed
+And sayfayi kapatir.........................................................passed
 ]]></system-out>
     </testcase>
 </testsuite>
