@@ -1,5 +1,8 @@
 pages\TutorialPage.class
+pages\DemoPage.class
 stepDefinitions\AmazonStepDefinition.class
+pages\WebPage.class
+pages\PractiseFormPage.class
 stepDefinitions\BlueStepDefinition.class
 stepDefinitions\GoogleStepdefs.class
 pages\DatabasePage.class
@@ -7,12 +10,13 @@ stepDefinitions\PractiseTestPageStepDefs.class
 stepDefinitions\GuruStepDef.class
 pages\AmazonPage.class
 runners\Runner.class
-runners\TestRunner.class
+stepDefinitions\AutoStepDefs.class
+utilities\Driver.class
 stepDefinitions\Hooks.class
 pages\PracticeTestPage.class
-runners\TestRunner2.class
 stepDefinitions\DatabaseOutline.class
 stepDefinitions\AutomationExStepDef.class
+stepDefinitions\DemoStepDefs.class
 pages\AtmPage.class
 utilities\ReusableMethods$1.class
 pages\GuruPage.class
@@ -21,6 +25,10 @@ pages\GooglePage.class
 stepDefinitions\AutomationStepDefinition.class
 utilities\ReusableMethods.class
 stepDefinitions\TutorialStepDefinition.class
+pages\AutoPage.class
+stepDefinitions\PractiseFormStepDef.class
+stepDefinitions\WebDriverStepDefinition.class
 stepDefinitions\NegativeStepDef.class
+utilities\ConfigReader.class
 stepDefinitions\PractiseAmazonStepDefs.class
 stepDefinitions\HepsiBuradaStepDef.class
