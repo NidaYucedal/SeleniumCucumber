@@ -34,23 +34,19 @@ public class PractiseFormPage {
     @FindBy(xpath = "(//input[@value='cb1'])[3]")
     public WebElement checkBox3;
 
-    @FindBy(xpath = "(//input[@value='rd1'])[1]")
-    public WebElement radioButton1;
+    @FindBy (xpath = "//input[@value='rd2']")
+    public WebElement radio2;
 
-    @FindBy(xpath = "(//input[@value='rd1'])[2]")
-    public WebElement radioButton2;
+    @FindBy (xpath = "//option[@value='ms3']")
+    public WebElement selectItem3;
 
-    @FindBy(xpath = "(//input[@value='rd1'])[3]")
-    public WebElement radioButton3;
-
-    @FindBy(xpath = "(//option[@value='ms1'])[1]")
-    public WebElement multiple;
-
-    @FindBy(xpath = "(//select[@name='dropdown'])[1]")
+    @FindBy(xpath = "//select[@name='dropdown']")
     public WebElement drop;
 
-    @FindBy(xpath = "(//input[@value='submit'])[1]")
+    @FindBy (xpath = "//input[@value='submit']")
     public WebElement submit;
 
+    @FindBy(xpath = "//*[.='text.txt']")
+    public WebElement file;
 
 }

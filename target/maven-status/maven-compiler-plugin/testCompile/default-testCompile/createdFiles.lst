@@ -2,6 +2,7 @@ pages\TutorialPage.class
 pages\DemoPage.class
 stepDefinitions\AmazonStepDefinition.class
 pages\WebPage.class
+pages\DemoQAPage.class
 pages\PractiseFormPage.class
 stepDefinitions\BlueStepDefinition.class
 stepDefinitions\GoogleStepdefs.class
@@ -13,9 +14,11 @@ runners\Runner.class
 stepDefinitions\AutoStepDefs.class
 utilities\Driver.class
 stepDefinitions\Hooks.class
+pages\MedunnaPage.class
 pages\PracticeTestPage.class
 stepDefinitions\DatabaseOutline.class
 stepDefinitions\AutomationExStepDef.class
+stepDefinitions\DemoQAStepDefinition.class
 stepDefinitions\DemoStepDefs.class
 pages\AtmPage.class
 utilities\ReusableMethods$1.class
@@ -28,6 +31,7 @@ stepDefinitions\TutorialStepDefinition.class
 pages\AutoPage.class
 stepDefinitions\PractiseFormStepDef.class
 stepDefinitions\WebDriverStepDefinition.class
+stepDefinitions\PractiseNegativeTestStepDef.class
 stepDefinitions\NegativeStepDef.class
 utilities\ConfigReader.class
 stepDefinitions\PractiseAmazonStepDefs.class
